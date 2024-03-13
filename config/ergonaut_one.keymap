@@ -80,16 +80,16 @@
 
         raise_layer {
             bindings = <
-&trans           &kp F1   &kp F2   &kp F3  &kp F4  &kp F5   &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&mt LCTRL EQUAL  &kp F6   &kp F7   &kp F8  &kp F9  &kp F10  &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&kp LALT         &kp F11  &kp F12  &trans  &trans  &trans   &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
-                                   &trans  &to 3   &to 0    &to 3         &trans    &trans
+&trans           &kp F1   &kp F2   &kp F3              &kp F4       &kp F5   &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
+&mt LCTRL EQUAL  &kp F6   &kp F7   &kp F8              &kp F9       &kp F10  &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
+&kp LALT         &kp F11  &kp F12  &trans              &trans       &trans   &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
+                                   &lt 2 LEFT_CONTROL  &lt 1 ENTER  &to 0    &to 3         &trans    &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
+&bootloader  &none         &none         &none         &none         &kp A         &none         &none         &none         &none         &none         &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
                                          &trans        &none         &to 0         &none         &trans        &trans
