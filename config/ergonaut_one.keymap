@@ -61,11 +61,19 @@
         compatible = "zmk,combos";
 
         esc {
-            bindings = <&gresc>;
+            bindings = <&kp ESC>;
             key-positions = <3 4>;
             timeout-ms = <50>;
             require-prior-idle-ms = <10>;
             layers = <0>;
+        };
+
+        F_8 {
+            bindings = <&kp F8>;
+            key-positions = <3 4>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <10>;
+            layers = <1>;
         };
     };
 
