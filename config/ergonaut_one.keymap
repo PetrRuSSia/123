@@ -101,7 +101,7 @@
         };
 
         point {
-            bindings = <&kp DOT>;
+            bindings = <&kp LC(KP_DOT)>;
             key-positions = <27 28>;
             timeout-ms = <50>;
             require-prior-idle-ms = <10>;
